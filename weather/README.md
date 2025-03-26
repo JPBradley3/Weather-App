@@ -1,5 +1,19 @@
 # Weather Web Application
 
+## Distinctiveness and complexity requirements
+
+> *Your web application must be sufficiently distinct from the other projects in this course and more complex than those.*
+
+This project does not contain the same structure as other projects like a social network, email client, auction site, or search engine. It is a weather client that has user accounts associated to locations. In addition to those features it provides users with information from a live API and it makes use of the API to graphically display the weather conditions around the user. It also provides relevant precipitation information on a timeline to make it more convenient to users in rainier locations such as Seattle.
+
+> *A project that appears to be a social network is a priori deemed by the staff to be indistinct from Project 4, and should not be submitted; it will be rejected.*
+
+Ideas from the course such as user accounts and their creation and administration were used. Only ideas and topics that spanned the entirety of the course were considered when making the application. The aggregated skills that this course provides are what I used to construct the application and it deals with a different kind of user manipulable data (weather) than the other projects in the course.
+
+> *A project that appears to be an e-commerce site is strongly suspected to be indistinct from Project 2, and your `README.md` file should be very clear as to why it’s not. Failing that, it should not be submitted; it will be rejected.*
+
+This project is a weather application and not an e-commerce website. The purpose of this website is to display certain aspects of the weather that is local to a user. You can find below a feature by feature description of the application and its uses.
+
 ## Overview
 
 This weather application provides users with a comprehensive and interactive weather monitoring experience. By combining real-time weather data with dynamic mapping capabilities, users can visualize current weather conditions and forecasts in an intuitive interface. The application serves as a powerful tool for both casual users seeking daily weather updates and those requiring more detailed meteorological information.
