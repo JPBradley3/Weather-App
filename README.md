@@ -11,58 +11,58 @@ The Weather App is a web application that provides real-time weather information
 
 ## Installation
 1. Clone the repository to your local machine:
-   ```sh
-   git clone https://github.com/yourusername/CS50w-Capstone.git
-   ```
+    ```bash
+    git clone https://github.com/yourusername/CS50w-Capstone.git
+    ```
 2. Navigate to the project folder:
-   ```sh
-   cd weather
-   ```
+    ```bash
+    cd weather
+    ```
 3. Install the required dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
+    ```bash
+    pip install -r requirements.txt
+    ```
 4. Set up API keys:
-   - Obtain an API key from [OpenWeather](https://openweathermap.org/).
-   - Add the API key to the environment variables or the application's configuration file.
+    - Obtain an API key from [OpenWeather](https://openweathermap.org/).
+    - Add the API key to the environment variables or the application's configuration file.
 
 ## Running Locally
-To run the app locally, follow the steps below based on your operating system:
+Follow the steps below based on your operating system:
 
 ### macOS
 1. Open the Terminal.
 2. Navigate to the project folder:
-   ```sh
-   cd ~/Documents/CS50w-Capstone/weather
-   ```
+    ```bash
+    cd ~/Documents/CS50w-Capstone/weather
+    ```
 3. Run the development server:
-   ```sh
-   python manage.py runserver
-   ```
+    ```bash
+    python manage.py runserver
+    ```
 4. Access the app through `http://127.0.0.1:8000` in your browser.
 
 ### Windows (PowerShell)
 1. Open PowerShell.
 2. Navigate to the project folder:
-   ```sh
-   cd C:\Users\YourName\Documents\CS50w-Capstone\weather
-   ```
+    ```bash
+    cd C:\Users\YourName\Documents\CS50w-Capstone\weather
+    ```
 3. Run the development server:
-   ```sh
-   python manage.py runserver
-   ```
+    ```bash
+    python manage.py runserver
+    ```
 4. Access the app through `http://127.0.0.1:8000` in your browser.
 
 ### Linux
 1. Open the terminal.
 2. Navigate to the project folder:
-   ```sh
-   cd ~/CS50w-Capstone/weather
-   ```
+    ```bash
+    cd ~/CS50w-Capstone/weather
+    ```
 3. Run the development server:
-   ```sh
-   python manage.py runserver
-   ```
+    ```bash
+    python manage.py runserver
+    ```
 4. Access the app through `http://127.0.0.1:8000` in your browser.
 
 ## Usage
@@ -72,6 +72,7 @@ To run the app locally, follow the steps below based on your operating system:
 ## Technologies Used
 - **Backend**: Django
 - **Frontend**: HTML, CSS, JavaScript
+- **Frameworks**: Django, Bootstrap (or any other frontend framework you use)
 - **APIs**: OpenWeather
 - **Database**: SQLite (or other)
 
@@ -81,4 +82,3 @@ To run the app locally, follow the steps below based on your operating system:
 - Expand forecast details with hourly updates.
 - Integrate weather alerts and notifications.
 - Develop a mobile-friendly progressive web app (PWA) version.
-
