@@ -18,7 +18,49 @@ Ultimately, this application is more than just a weather-tracking tool—it is a
 
 # Project Structure
 
-This application is organized into several components, each responsible for handling different aspects of weather tracking and user interaction.The main Django project directory, `weather/`, contains configuration files managing the framework's core functionality. The `settings.py` file defines database configurations, installed applications, middleware, and static file locations. The `urls.py` file determines how user requests are routed, connecting them to specific views. The `wsgi.py` and `asgi.py` files are entry points for different deployment models, ensuring compatibility with both standard and asynchronous requests.Within the `weather\_app/` directory, the core application logic is implemented. The `models.py` file structures database entries, defining user accounts and location tracking features. The `views.py` file contains functions responsible for fetching weather data, rendering templates, and handling user interactions. The `urls.py` file manages the application’s specific routes, ensuring that different sections (such as the map interface or user settings) are properly linked.Additional files such as `forms.py` manage user input, streamlining location selection and profile settings. The `admin.py` file allows for backend management, making it possible to modify accounts and weather preferences through Django’s built-in administrative interface. The `migrations/` directory holds database schema changes, ensuring version control as the application evolves.Frontend elements are stored in `templates/weather\_app/`, where HTML files dynamically render weather conditions, mapping features, and interactive timelines. The `static/` folder contains styling and JavaScript logic, improving usability across different devices. Specifically, `map.js` enables Leaflet.js functionality, ensuring smooth weather layer rendering and real-time map updates.Other essential files include `.env`, which securely stores API keys and sensitive credentials, and `requirements.txt`, listing dependencies needed for installation. The SQLite database (`db.sqlite3`) maintains stored user preferences and historical weather data, ensuring continuity between sessions.# How to Run the Application
+# Application Structure Overview
+
+This application is carefully structured into several key components, each playing a distinct role in handling weather data processing, user interaction, and system functionality. By leveraging **Django’s modular framework**, the project ensures maintainability, scalability, and seamless user experience.
+
+## Project Structure Overview
+
+At the highest level, the main Django project directory, `weather/`, acts as the **foundation**, housing critical configuration files necessary for managing core framework operations:
+
+- **`settings.py`** – Defines essential settings such as database configurations, installed applications, middleware components, and locations for static files.
+- **`urls.py`** – Routes incoming user requests, ensuring proper connections between URLs and the corresponding views.
+- **`wsgi.py` & `asgi.py`** – Serve as entry points for different deployment models, allowing compatibility with both synchronous and asynchronous request handling.
+
+## Core Application Logic
+
+Within the `weather_app/` directory, the backbone of the application is implemented. This is where **data modeling, user interactions, and API integrations** come together:
+
+- **`models.py`** – Defines structured database entries, including user profiles, location tracking features, and historical weather data storage.
+- **`views.py`** – Handles dynamic functionality such as fetching real-time weather data, rendering templates, and managing user interactions.
+- **`urls.py`** – Determines application-specific routes, ensuring intuitive navigation between sections like the interactive map interface and user settings.
+
+To improve functionality and streamline user experience, additional files further enhance the system:
+
+- **`forms.py`** – Manages user input validation and interaction, enabling seamless location selection and profile customization.
+- **`admin.py`** – Integrates Django’s **administrative interface**, allowing backend management of user accounts and weather preferences.
+
+As the application evolves, **database migrations** are efficiently managed through the **`migrations/` directory**, ensuring version control and smooth schema updates.
+
+## Frontend & User Interaction
+
+Enhancing the user experience, all interface elements are stored within `templates/weather_app/`, enabling dynamic rendering of weather conditions, mapping tools, and interactive data visualizations. Additionally, **styling and JavaScript logic** are located in the `static/` directory:
+
+- **HTML Templates** – Provide a structured layout for real-time weather updates and user interactions.
+- **CSS & JavaScript** – Ensure responsive design and an engaging interface across different devices.
+- **`map.js`** – Implements **Leaflet.js**, enabling smooth weather overlay rendering and **real-time map updates** for cyclists.
+
+## Security & Dependencies
+
+To ensure secure operations and maintain a clean environment:
+
+- **`.env`** – Safeguards API keys and sensitive credentials.
+- **`requirements.txt`** – Lists all necessary dependencies required for installation.
+- **`db.sqlite3`** – Maintains stored user preferences and historical weather trends, ensuring continuity between user sessions.
+
 
 ## PrerequisitesBefore running the application, ensure the following dependencies are installed:- Python 3.x
 
