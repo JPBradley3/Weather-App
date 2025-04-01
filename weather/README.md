@@ -1,8 +1,5 @@
 # Weather Web Application
-
-*JP Bradley*
-
-*\today*
+---------------
 
 # Distinctiveness and Complexity
 
