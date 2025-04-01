@@ -1,7 +1,7 @@
 # Weather Web Application
 ---
 
-# Distinctiveness and Complexity
+## Distinctiveness and Complexity
 
 Delivering pizza on a bike demands a unique blend of efficiency, adaptability, and precision—especially in a city like Seattle, where the weather is notoriously unpredictable. One moment, the skies may be clear, and the next, a sudden downpour or gusty winds can disrupt a rider’s momentum, affecting not only delivery speed but also overall safety. For cyclists navigating these ever-changing conditions, real-time weather awareness is more than just helpful—it’s a necessity. While standard weather applications provide general forecasts, they often lack the granularity and immediacy that cyclists need to make informed route decisions on the fly. Recognizing this gap, I developed a Weather Web Application tailored specifically to address the challenges that urban delivery riders face, offering a smarter and more intuitive approach to planning routes efficiently, avoiding delays, and optimizing time on the road.
 
@@ -13,13 +13,13 @@ Beyond simply displaying weather data, this project represents a functional inno
 
 Ultimately, this application is more than just a weather-tracking tool—it is a decision-making resource for urban cyclists, helping them maximize efficiency, reduce downtime, and enhance their ability to meet delivery demands under dynamic conditions. Its unique blend of interactive weather tracking, real-time updates, and cyclist-specific features sets it apart both as a technical achievement and a valuable addition to the urban delivery toolkit. By providing a smarter, data-driven approach to weather navigation, this project ensures that riders can take control of their journeys, minimizing obstacles and optimizing their performance on the road.
 
-# Project Structure
+## Project Structure
 
-# Application Structure Overview
+## Application Structure Overview
 
 This application is carefully structured into several key components, each playing a distinct role in handling weather data processing, user interaction, and system functionality. By leveraging **Django’s modular framework**, the project ensures maintainability, scalability, and seamless user experience.
 
-## Project Structure Overview
+### Project Structure Overview
 
 At the highest level, the main Django project directory, `weather/`, acts as the **foundation**, housing critical configuration files necessary for managing core framework operations:
 
@@ -27,7 +27,7 @@ At the highest level, the main Django project directory, `weather/`, acts as the
 - **`urls.py`** – Routes incoming user requests, ensuring proper connections between URLs and the corresponding views.
 - **`wsgi.py` & `asgi.py`** – Serve as entry points for different deployment models, allowing compatibility with both synchronous and asynchronous request handling.
 
-## Core Application Logic
+### Core Application Logic
 
 Within the `weather_app/` directory, the backbone of the application is implemented. This is where **data modeling, user interactions, and API integrations** come together:
 
@@ -42,7 +42,7 @@ To improve functionality and streamline user experience, additional files furthe
 
 As the application evolves, **database migrations** are efficiently managed through the **`migrations/` directory**, ensuring version control and smooth schema updates.
 
-## Frontend & User Interaction
+### Frontend & User Interaction
 
 Enhancing the user experience, all interface elements are stored within `templates/weather_app/`, enabling dynamic rendering of weather conditions, mapping tools, and interactive data visualizations. Additionally, **styling and JavaScript logic** are located in the `static/` directory:
 
@@ -50,7 +50,7 @@ Enhancing the user experience, all interface elements are stored within `templat
 - **CSS & JavaScript** – Ensure responsive design and an engaging interface across different devices.
 - **`map.js`** – Implements **Leaflet.js**, enabling smooth weather overlay rendering and **real-time map updates** for cyclists.
 
-## Security & Dependencies
+### Security & Dependencies
 
 To ensure secure operations and maintain a clean environment:
 
@@ -59,7 +59,7 @@ To ensure secure operations and maintain a clean environment:
 - **`db.sqlite3`** – Maintains stored user preferences and historical weather trends, ensuring continuity between user sessions.
 
 
-## PrerequisitesBefore running the application, ensure the following dependencies are installed:- Python 3.x
+### PrerequisitesBefore running the application, ensure the following dependencies are installed:- Python 3.x
 
 - Django
 
@@ -69,7 +69,7 @@ To ensure secure operations and maintain a clean environment:
 
 - OpenWeatherMap API key
 
-## Installation Steps
+### Installation Steps
 
 1. Clone the repository and navigate to the project directory:
    
@@ -91,6 +91,6 @@ To ensure secure operations and maintain a clean environment:
    
    ```Navigate to http://127.0.0.1:8000/ to access the web interface.```
    
-# Additional Information
+## Additional Information
 
 This project was built from a practical need, helping cyclists optimize their travel efficiency based on real-world weather conditions. The ability to link user accounts to locations, visualize real-time weather changes, and forecast precipitation patterns makes it distinctive from standard forecasting tools. Every feature was carefully designed with urban cycling in mind, ensuring that deliveries can be planned with precision and delays minimized.Unlike static weather apps, this application serves as a real-time decision-making tool not simply informing users about forecasts but helping them take immediate action based on live conditions. Whether adjusting a route due to incoming rain or checking wind patterns before heading to the next delivery, this project ensures that weather insights become actionable, intuitive, and effective for riders.
