@@ -1,5 +1,4 @@
 # Weather Web Application
----
 
 ## Distinctiveness and Complexity
 
